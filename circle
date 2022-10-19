@@ -1,4 +1,4 @@
-
+//生成的圖像僅做娛樂，打印出的圓形并不明顯，多多指教
 package Yuloo;
 import java.util.Scanner;
 public class Circle {
