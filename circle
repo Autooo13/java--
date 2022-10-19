@@ -1,1 +1,33 @@
 
+package Yuloo;
+import java.util.Scanner;
+public class Circle {
+	public static void main(String[] args) {
+		System.out.print("请输入想要圆的直径(直径仅限正整数且是奇数)：");
+		Scanner in=new Scanner(System.in);
+		int d1=in.nextInt();
+		char [][] arr=new char[d1][d1];
+		int x,y;
+		for(x=0;x<d1;x++) {
+			for(y=0;y<d1;y++) {
+				float i;
+				i=(float) Math.pow(((d1/2)-x),2)+(float) Math.pow(((d1/2)-y),2);
+				if(i==(float) Math.pow((d1/2),2)) {
+					arr[x][y]='*';
+				}
+				else {
+					arr[x][y]=' ';
+				}
+			}
+		}
+		for(x=0;x<d1;x++) {
+			for(y=0;y<d1;y++) {
+				System.out.print(arr[x][y]);
+				if(y==d1-1) {
+					System.out.print("\n");
+				}
+			}
+		}
+	}
+
+	}
